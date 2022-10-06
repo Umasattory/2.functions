@@ -30,12 +30,11 @@ function worker(arr) {
 }
 
 function makeWork(arrOfArr, func) {
-  let max;
-  max = func(arrOfArr[0]);
+  let max = func(arrOfArr[0]);
   for (let i = 0; i < arrOfArr.length; i++){
-    let sumI = func(arrOfArr[i]);
-    if (sumI > max) {
-      max = sumI;
+    let sum = func(arrOfArr[i]);
+    if (sum > max) {
+      max = sum;
     }
   }
   return max;
