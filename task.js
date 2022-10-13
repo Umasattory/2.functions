@@ -14,7 +14,7 @@ function getArrayParams(arr) {
     //min = Math.min.apply(null, arr);
     sum += arr[i];
     avg = sum / arr.length;
-    avg = Math.round((avg) * 100) / 100;
+    avg = Math.round(avg * 100) / 100;
   };
   return { min: min, max: max, avg: avg };
 }
